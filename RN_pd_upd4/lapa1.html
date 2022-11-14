@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="lapas.css">
+    <title>Start</title>
+</head>
+
+
+
+
+
+<header>
+    
+
+
+    <a style="font-size:45px;cursor:pointer;position:absolute;top: 5px;;left:15px;color: #ffffff; "onclick="openNav()">&#9776; </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(34, 31, 31);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 40px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+        
+        
+    </style>
+   
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+        <a href="homepage.html">Sākums</a>
+        <a href="lapa1.html">Start</a>
+        <a href="#">Headings</a>
+        <a href="#">Classes</a>
+        <a href="#">Attributes</a>
+        <a href="#">Colors</a>
+        <a href="#">CSS</a>
+
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+
+
+</header>
+
+
+
+<body>
+    <div class="virsa">
+        <h>Kas ir HTML?</h>
+        </div>
+
+    
+    <div class ="apaksa">
+        <p>HTML, jeb HyperText Markup Language ir vienkāršākā un parastākā valoda, kas tiek izmantota mājaslapu taisīšanai.</p> 
+       
+    </div>
+
+    <hdivi>Kā izskatās HTML dokuments?</hdivi> 
+    <img src="htmldoc.PNG">
+
+    <pinfo> <'!DOCTYPE HTML> Paskaidro kāda formāta dokuments tiek izmantots.</pinfo>
+    <pinfo2><'html> Tiek apzīmēts, lai definētu HTML dokumenta sakni, kā arī pārlūkprogrammai norāda, ka tas ir HTML dokuments.</pinfo2>
+    <pinfo3><'head> Šeit tiek ievietota informācija saistībā ar dokumentu. Kas šeit tiek ievietots nebūs redzams.</pinfo3>
+    <pinfo4><'body> Šeit tiek ievietota redzamā daļa no HTML dokumenta, kas tiks parādīta uz lapas.</pinfo4>
+</body>
+
+
+
+<style>
+    hdivi{
+    position: absolute;
+    left: 210px;
+    font-size: 40px;
+    top: 250px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    }
+    img{
+        position: absolute;
+        left: 210px;
+        top: 300px;
+    }
+    pinfo{
+        position: absolute;
+        left: 210px;
+        font-size: 20px;
+        bottom: 400px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    pinfo2{
+        position: absolute;
+        left: 210px;
+        font-size: 20px;
+        bottom: 350px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 20cm;
+    }
+    pinfo3{
+        position: absolute;
+        left: 210px;
+        font-size: 20px;
+        bottom: 300px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 20cm;
+    }
+    pinfo4{
+        position: absolute;
+        left: 210px;
+        font-size: 20px;
+        bottom: 250px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 20cm;
+    }
+</style>
+
+
+<script src="script.js"></script>
+</html>

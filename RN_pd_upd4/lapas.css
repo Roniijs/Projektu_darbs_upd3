@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #242329;
+    place-items: center;
+    
+    
+}
+.virsa{
+    position: absolute;
+    left: 210px;
+    font-size: 40px;
+    top: 75px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.apaksa{
+    position: absolute;
+    left: 210px;
+    font-size: 25px;
+    top: 100px;
+    color: white;
+    width: 20cm;
+}
