@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lapas.css">
+    <title>Attributes</title>
+</head>
+
+<h1>Attributes ir atribūti, kas tiek izmantoti HTML <br> elementu papildinformācijas piešķiršanai.</h1>
+<h2>Par HTML Atribūtiem</h2>
+<p1>Katram elementam var būt atribūts.<br>Lai izveidotu atribūtu tas ir jādeklarē elementa sākuma.<br>Atribūts pievieno papildus informāciju par kādu elementu.<br></p1>
+<h3>Kādi ir atribūti?</h3>
+<p2>Ir 2 veidu atribūti.<br></p2>
+<p3>Atribūts "src" un "href"</p3>
+<h4>To lietošanas piemērs</h4>
+<p4>Lai mājaslapai pievienotu attēlu jaizmanto <'img><br>Lai attēlu rādītu jaizmanto src atribūts.</p4>
+<img src="atributsdoc.png">
+
+<body>
+    
+</body>
+
+<header>
+    
+
+
+    <a style="font-size:45px;cursor:pointer;position:absolute;top: 5px;;left:15px;color: #ffffff; "onclick="openNav()">&#9776; </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(34, 31, 31);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 40px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+        
+        
+    </style>
+   
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+        <a href="homepage.html">Sākums</a>
+        <a href="lapa1.html">Start</a>
+        <a href="lapa2.html">Headings</a>
+        <a href="lapa3.html">Paragraphs</a>
+        <a href="lapa4.html">Attributes</a>
+        <a href="#">Colors</a>
+        <a href="#">CSS</a>
+
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+
+
+</header>
+
+<style>
+    h1{
+        position: absolute;
+        left: 210px;
+        top: 75px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        overflow: visible;
+        font-size: 2vw;
+    }
+    h2{
+        position: absolute;
+        left: 210px;
+        top: 180px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+    }
+    p1{
+        position: absolute;
+        left: 210px;
+        top: 260px;
+        color: rgb(255, 123, 0);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6vw;
+    }
+    h3{
+        position: absolute;
+        left: 210px;
+        top: 340px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        color: white;
+        width: 20cm;
+
+    }
+    p2{
+        position: absolute;
+        left: 210px;
+        top: 440px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6vw;
+        color: white;
+        width: 20cm;
+
+    }
+    p3{
+        position: absolute;
+        left: 210px;
+        top: 470px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6vw;
+        color: white;
+        width: 20cm;
+
+    }
+    h4{
+        position: absolute;
+        left: 210px;
+        bottom: 350px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        color: white;
+        width: 20cm;
+
+    }
+    p4{
+        position: absolute;
+        left: 210px;
+        bottom: 300px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6vw;
+        color: white;
+        width: 20cm;
+
+    }
+    img{
+        position: absolute;
+        left: 24cm;
+        top: 500px;
+        width: 30vw;
+    }
+</style>
+
+</html>
