@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lapas.css">
+    <title>Paragraphs</title>
+</head>
+
+<h1>HTML Paragraphs ir paragrāfs, jeb apakšteksts priekš kāda virsraksta. </h1>
+<p1>Paragrāfs tiek definēts ar <'p><'/p> </p1>
+<p2>Paragrāfi var būt gari un tos var sadalīt lūztošās daļās <br> izmantojot breakpointus kuri tiek definēti ar <'br></p2>
+<h2>Šajā attēlā var redzēt kā izskatās paragrāfs ar breakpointu.</h2>
+<img src="paragrafsdoc.png">
+<p3>Paragrāfam var pievienot stilu izmantojot <br> <'p style="font-size: 15px;">Virsraksts<'/p> </p3>
+
+<body>
+    
+</body>
+
+<style>
+    h1{
+        position: absolute;
+        left: 210px;
+        top: 75px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        overflow: visible;
+        font-size: 2vw;
+    }
+    p1{
+        position: absolute;
+        left: 210px;
+        top: 150px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+    }
+    p2{
+        position: absolute;
+        left: 210px;
+        top: 200px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5vw;        
+
+    }
+    h2{
+        position: absolute;
+        left: 210px;
+        top: 250px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+    }
+    img{
+        position: absolute;
+        left: 210px;
+        top: 350px;
+        width: 30vw;
+    }
+    p3{
+        position: absolute;
+        left: 210px;
+        bottom: 180px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5vw;
+        color: white;
+        width: 20cm;
+
+    }
+</style>
+
+
+<header>
+    
+
+
+    <a style="font-size:45px;cursor:pointer;position:absolute;top: 5px;;left:15px;color: #ffffff; "onclick="openNav()">&#9776; </a>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(34, 31, 31);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 40px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+        
+        
+    </style>
+   
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+        <a href="homepage.html">Sākums</a>
+        <a href="lapa1.html">Start</a>
+        <a href="lapa2.html">Headings</a>
+        <a href="lapa3.html">Paragraphs</a>
+        <a href="lapa4.html">Attributes</a>
+        <a href="lapa5.html">Styles</a>
+        <a href="lapa6.html">Comments</a>
+
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+
+
+</header>
+</html>

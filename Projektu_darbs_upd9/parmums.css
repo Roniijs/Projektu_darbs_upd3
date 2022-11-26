@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+   
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #242329;
+    place-items: center;
+    
+    
+}
+   
+   
+   .icons {
+    display: flex;
+    column-gap: 25px;
+    position: absolute;
+    right: 450px;
+    top: 15cm;
+    
+}
+   
+   .icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+    
+}
+   
+   .icon:hover {
+       outline-offset: 4px;
+   }
+   
+   .icon:hover i {
+       animation: shake .25s;
+   }
+   
+   .icon--instagram:hover {
+       background-image: radial-gradient(circle at 30% 107%,
+               #fdf497 0%, #fdf497 5%,
+               #fd5949 45%, #d6249f 60%,
+               #285AEB 90%);
+       outline-color: #a02d76;
+   }
+   
+   .icon--twitter:hover {
+       background-color: #1da1f2;
+       outline-color: #1da1f2;
+   }
+   
+   .icon--twitter:hover {
+       background-color: #0077b5;
+       outline-color: #0077b5;
+   }
+   
+   .icon--github:hover {
+       background-color: #2ea44f;
+       outline-color: #2ea44f;
+   }
+   
+   @keyframes shake {
+       10% {
+           transform: rotate(15deg);
+       }
+   
+       20% {
+           transform: rotate(-15deg);
+       }
+   
+       30% {
+           transform: rotate(15deg);
+       }
+   
+       40% {
+           transform: rotate(-15deg);
+       }
+   }
+
+   .card{
+    width: 350px; /* Card width. */
+    height: 400px /* Card height - Do not set a hight if you have a lot of content in the card. */;
+    left: 35cm;
+    top: 4cm;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid 
+    rgba(255, 255, 255, .5); /* The outline works the same way as a border with added perks. */
+    outline-offset: -8px; /* Negative offset to bring in the outline border. */
+    box-shadow: 3px 3px 10px
+    rgba(0, 0, 0, .1);
+    position: relative; /* Relative position because we are using position absolute on elements inside the card.
+    This will make sure the said elements do not float outside of the card. Important for the zoom effect.*/
+    overflow: hidden; /* Since we are scaling the image on hover, we have to hide the overflow. Important for the zoom effect.*/
+}
+.card-image{
+    /* All the following styles are important for the zoom effect. */
+    position: absolute;
+    inset: 0; /* Fixes the starting points of the image to be on all 4 corners. */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the image maintain its aspect ratio while filling the up entire card. */
+    
+    transition: transform .75s; /* Adds a transition over .75 seconds on the transform property (the scaling). */
+}
+.card:hover .card-image{
+    transform: scale(1.15); /* When the card is hovered, the image inside of it is scaled up. Important for the zoom effect. */
+}
+/* Not important for the zoom effect. */
+.card-title{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px 
+    rgba(0, 0, 0, .5);
+}
+
+.btn_div {
+    --color: #3992e6;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    z-index: 1;
+    
+   }
+   
+   .btn_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -10px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .btn_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .btn_div:hover::before {
+    width: 50%;
+    height: 50%;
+   }
+   
+   .btn_div:hover::after {
+    width: 50%;
+    height: 50%;
+   }
+   
+   .btn_div button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    background: #222222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+   }
